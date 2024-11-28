@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Result</title>
+    <style>
+        body{
+            background-color: rgb(248, 236, 213);
+        }
+       header{
+        display: flex;
+       }
+       nav{
+        float: right;
+        margin-left: 80%;
+       }
+       nav a{
+        font-weight: 800;
+        font-size: 20px;
+        color: rgba(223, 14, 14, 0.979);
+        text-decoration: none;
+        justify-content: space-between;
+        text-transform: uppercase;
+       }
+       img{
+        width: 100px;
+        height: 100px;
+       }
+        .start{
+            text-align: center;
+            color: rgba(223, 14, 14, 0.979);
+            margin-right: 20px;
+            font-size: 27px;
+            font-weight: 800;
+        }
+        .form{
+            text-align: center;
+            color: rgba(223, 14, 14, 0.9);
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+        }
+        form input{
+          padding: 10px 80px;
+          border-radius: 2px;
+        }
+        button{
+            border: 1px solid lavender;
+            background-color: rgb(166, 210, 248);
+            color: rgba(223, 14, 14, 0.9);
+            padding: 10px 50px;
+            font-size: 18px;
+            font-weight: 800;
+            margin-left: 80%;
+            transition: all 1.5s ease;
+        }
+        button:hover{
+            background-color: gold;
+            color: white;
+            cursor: pointer;
+            transition: all 1.5s ease;
+
+        }
+
+
+        @media(max-width: 680px){
+            header{
+                display: flex;
+                flex-direction: column;
+            }
+            nav{
+                display: flex;
+                flex-direction: column;
+            }
+            nav a{
+                display: flex;
+                flex-direction: column;
+            }
+            .start{
+                display: inline;
+                flex-direction: column;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./ACHS images/logo.png">
+        <nav>
+            <a href="./project.html">Home</a>
+        </nav>
+    </header>
+
+    <div>
+        <p class="start">
+            ADVENTIST COMPREHENSIVE HIGH SCHOOL, AKABUKA<br>
+            PMB 04, AKABUKA, RIVERS STATE<br>
+        Email:achs.akabuka@mail.com; Phone:08067566001
+        </p>
+    </div>
+        <form class="form">
+            <h2 style=" color: rgba(223, 14, 14, 0.979);">CHECK RESULT</h2>
+            <label for="">Academic Session:</label> <br>
+            <input type="text" placeholdr="-Select Session-"> <br>
+            <label for="">Term:</label> <br>
+            <input type="text" placeholdr="Enter Last your name"> <br>
+            <label for="">Admission Number:</label> <br>
+            <input type="password"placeholde="password"> <br>
+            <label for="">Pin:</label> <br>
+            <input type="Pin" value=""> <br>
+            <label for="">Card Serial Number:</label> <br>
+            <input  required><br><br>
+
+            <button>Submit</button>
+        </form>
+</body>
+</html>
